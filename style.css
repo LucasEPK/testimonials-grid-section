@@ -1,3 +1,4 @@
+/*-----------------------------------------MOBILE STYLES------------------------------------------------*/
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: hsl(210, 46%, 95%); /*Light grayish blue*/
@@ -117,4 +118,59 @@ body{
 
 .attribution{
     display: none;
+}
+
+@media(min-width: 800px){
+
+    body{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        grid-template-rows: minmax(80vh, 90vh);
+        grid-template-columns: 80vw;
+    }
+
+    .card_container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        margin: 0;
+    }
+
+    .card-1{
+        grid-area: 1/1/2/3;
+    }
+
+    .card-2{
+        grid-area: 1/3/2/4;
+    }
+
+    .card-3{
+        grid-area: 2/1/3/2;
+    }
+
+    .card-4{
+        grid-area: 2/2/3/4;
+    }
+
+    .card-5{
+        grid-area: 1/4/3/5;
+    }
+
+    .person{
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .card-1 .person{
+        grid-template-columns: 1fr 10fr;
+    }
+
+    .card-4 .person{
+        grid-template-columns: 1fr 10fr;
+    }
+
+    .person img{
+        height: 35px;
+    }
 }
