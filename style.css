@@ -1,0 +1,59 @@
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%); /*Light grayish blue*/
+}
+
+.card_container{
+    display: grid;
+
+    gap: 1rem;
+    margin: 70px 25px;
+}
+
+.card{
+    background-color: gainsboro;
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+/*Daniel's card*/
+.card-1{
+    background-color: hsl(263, 55%, 52%);/*moderate violet*/
+}
+
+/*Jonathan's card*/
+.card-2{
+    background-color: hsl(217, 19%, 35%);/*Very dark grayish blue*/
+}
+
+/*Jeanette's card*/
+.card-3{
+    background-color: hsl(0, 0%, 100%); /*white*/
+}
+
+/*Patrick's card*/
+.card-4{
+    background-color: hsl(219, 29%, 14%);/*Very dark blackish blue*/
+}
+
+/*Kira's card*/
+.card-5{
+    background-color: hsl(0, 0%, 100%);/*white*/
+}
+
+.person{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.person img{
+    grid-area: 1/1/3/2;
+
+    border-radius: 50%;
+}
+
+.attribution{
+    display: none;
+}
